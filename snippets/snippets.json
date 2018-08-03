@@ -64,5 +64,35 @@
             "export default ${0};"
         ],
         "description": "Creates a new Uisum page with action menu and sample action menu item."
+    },
+    "Uisum: App component": {
+        "prefix": "ui-app",
+        "body": [
+            "import React from \"react\";",
+            "import { Grid, SidebarMenu, MenuItem } from \"uisum\";",
+            "",
+            "class App extends React.Component {",
+            "\trender() {",
+            "\t\treturn (",
+            "\t\t\t<Grid",
+            "\t\t\t\texpandSidebar",
+            "\t\t\t\tpages={[",
+            "\t\t\t\t\t{",
+            "\t\t\t\t\t\tname: \"home\",",
+            "\t\t\t\t\t\tcomponent: <HomePage />",
+            "\t\t\t\t\t}",
+            "\t\t\t\t]}",
+            "\t\t\t>",
+            "\t\t\t\t<SidebarMenu>",
+            "\t\t\t\t\t<MenuItem href=\"#/home\" icon=\"icon-home\" label=\"My Page\" isHome />",
+            "\t\t\t\t</SidebarMenu>",
+            "\t\t\t</Grid>",
+            "\t\t);",
+            "\t}",
+            "}",
+            "",
+            "export default App;"
+        ],
+        "description": "Creates a new Uisum app wrapper with routing."
     }
 }
