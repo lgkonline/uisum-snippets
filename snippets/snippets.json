@@ -94,5 +94,41 @@
             "export default App;"
         ],
         "description": "Creates a new Uisum app wrapper with routing."
+    },
+    "React Component with Flow": {
+        "prefix": "react-component-flow",
+        "body": [
+            "// @flow",
+            "",
+            "import React from \"react\";",
+            "",
+            "type Props = {};",
+            "",
+            "class ${0} extends React.Component<Props> {",
+            "\trender() {",
+            "\t\treturn (",
+            "\t\t\t<div />",
+            "\t\t);",
+            "\t}",
+            "}",
+            "",
+            "export default ${0};"
+        ],
+        "description": "Adds component with Flow enabled"
+    },
+    "React Component Test": {
+        "prefix": "react-test",
+        "body": [
+            "import React from \"react\";",
+            "import ReactDOM from \"react-dom\";",
+            "import ${0} from \"./${0}\";",
+            "",
+            "it(\"renders without crashing\", () => {",
+            "\tconst div = document.createElement(\"div\");",
+            "\tReactDOM.render(<${0} />, div);",
+            "\tReactDOM.unmountComponentAtNode(div);",
+            "});"
+        ],
+        "description": "Adds general testing for a React component"
     }
 }
