@@ -12,7 +12,7 @@ const fs = require("fs");
 const snippets = require("./snippets/snippets.json");
 
 let tableArray = [
-    ["Snippet", "Description"]
+    ["Prefix", "Description"]
 ];
 
 Object.keys(snippets).forEach(prop => {

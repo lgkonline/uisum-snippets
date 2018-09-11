@@ -6,7 +6,7 @@ This is an extension for Visual Studio Code with snippets for [Uisum](https://ui
 
 ## List with all snippets
 
-| Snippet                   | Description                                                            |
+| Prefix                    | Description                                                            |
 | ------------------------- | ---------------------------------------------------------------------- |
 | `ui-new-page`             | Creates a new Uisum page.                                              |
 | `ui-new-page-action-menu` | Creates a new Uisum page with action menu and sample action menu item. |
